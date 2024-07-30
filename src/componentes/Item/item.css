@@ -1,0 +1,24 @@
+.item-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    background-color: white;
+    color: #222222;
+    border-radius: 30px;
+    margin-top: 8px;
+    
+}
+.item-card img{
+    width: 80%;
+
+}
+
+img{
+    max-width: 80%;
+}
+
+button{
+    margin-bottom: 8px;
+}
