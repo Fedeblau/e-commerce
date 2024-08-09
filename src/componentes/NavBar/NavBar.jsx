@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
+
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
+
 
   const [categories, setCategories] = useState([])
 

@@ -1,12 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { CiShoppingCart, CiBellOn } from "react-icons/ci";
+import { CartContext } from '../../context/cartContext';
 
 
 const CartWidget = () => {
+    const {cart, itemQuantity} = useContext(CartContext)
+
+
+    console.log("CARRITO",cart)
+
+
+
+
+
     return (
-        <div>
+        <div className='widget'>
             <CiBellOn />
-            <span>0</span>
+            <span>{itemQuantity()}</span>
             <CiShoppingCart />
         </div>
     )

@@ -9,7 +9,6 @@ const Item = ({ e }) => {
             <img src={e.image} alt="foto del producto" />
             <p>${e.precio}</p>
             <Link to={`/detalle/${e.id}`}> Ver detalles de este producto</Link>
-
         </div>
     )
 }
