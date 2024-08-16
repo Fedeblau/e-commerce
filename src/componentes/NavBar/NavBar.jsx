@@ -45,7 +45,9 @@ const NavBar = () => {
             <Link to={'/categoria/calzado'}> Calzado</Link>
           </li>
         </ul> */}
-        <CartWidget />
+        <Link to='/cart'>
+          <CartWidget />
+        </Link>
     </div>
   )
 }

@@ -6,6 +6,8 @@ import NavBar from './componentes/NavBar/NavBar'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import logo from './assets/react.svg'
 import { CartContextProvider } from './context/cartContext'
+import Cart from './componentes/Cart'
+import Checkout from './componentes/Checkout'
 
 
 function App() {
@@ -16,13 +18,12 @@ function App() {
     <CartContextProvider>
       <BrowserRouter>
         <NavBar />
-        <img src='/vite.svg' />
         <Routes>
           <Route path='/' element={<ItemListContainer/>} />
           <Route path='/categoria/:cat' element={<ItemListContainer/>} />
           <Route path='/detalle/:id'  element={<ItemDetailContainer/>} />
-          {/* <Route path='/cart'  element={<Cart/>} />
-          <Route path='/checkout'  element={<Checkout/>} /> */}
+          <Route path='/cart'  element={<Cart/>} />
+          <Route path='/checkout'  element={<Checkout/>} />
         </Routes>
       </BrowserRouter>
     </CartContextProvider>
